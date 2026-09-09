@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CSI SRMCEM × D’CODERS — Official Website 3.0
 
-## Getting Started
+> The official digital platform and management portal of the **Computer Society of India (CSI) Student Chapter, SRMCEM Lucknow × D’CODERS Technical Club**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 About the Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**CSI SRMCEM × D’CODERS — Official Website 3.0** is a complete rebuild of our community's digital platform, developed with a stronger focus on **performance, reliability, scalability, security, and content management**.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Version 3.0 was created as a fresh implementation to overcome performance, data-rendering, synchronization, and reliability limitations encountered in earlier versions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The platform serves as both:
 
-## Learn More
+- 🌐 A public-facing technical community website
+- ⚙️ A centralized administrative CMS
+- 📅 An event and activity management platform
+- 👥 A team and organizational hierarchy showcase
+- 📰 A digital hub for newsletters, news, gallery, and community initiatives
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### ⚡ High-Performance Data Rendering
+Optimized data architecture with a lightweight in-memory `DataStore` layer for fast initial rendering while maintaining Supabase as the primary backend data source.
 
-## Deploy on Vercel
+### 🔐 Production-Ready Row Level Security
+Supabase **Row Level Security (RLS)** protects application data with:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Public `SELECT` access for website content
+- Authenticated admin access for `INSERT`
+- Authenticated admin access for `UPDATE`
+- Authenticated admin access for `DELETE`
+- JWT-based authorization through Supabase Auth
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 📅 Smart Event Auto-Transition
+Events automatically move between:
+
+```text
+Upcoming Events → Past Events
